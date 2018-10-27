@@ -6,6 +6,7 @@
  ;; JS modules
  :js-modules ["realm"
               "react-native-i18n"
+			  "react-native-nodemediaclient"
               "realm/react-native"
               "dismissKeyboard"
               "react-native-splash-screen"

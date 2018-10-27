@@ -14,6 +14,7 @@
             [status-im.ui.screens.progress.views :refer [progress]]
 
             [status-im.ui.screens.chat.views :refer [chat chat-modal]]
+            [status-im.ui.screens.go-live.views :refer [go-live]]
             [status-im.ui.screens.add-new.views :refer [add-new]]
             [status-im.ui.screens.add-new.new-chat.views :refer [new-chat]]
             [status-im.ui.screens.add-new.new-public-chat.view :refer [new-public-chat]]
@@ -155,6 +156,7 @@
           :chat                         chat
           :profile                      profile.contact/profile
           :new                          add-new
+          :go-live                      go-live
           :new-chat                     new-chat
           :qr-scanner                   qr-scanner
           :new-group                    new-group

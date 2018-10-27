@@ -5,12 +5,16 @@
             [status-im.ui.components.dialog :as dialog]
             [status-im.ui.components.react :as react]
             [status-im.utils.platform :as platform]
+			[re-frame.core :as re-frame]
             [status-im.utils.http :as http]))
 
 (defn- open-share [content]
   (when (or (:message content)
             (:url content))
     (.share react/sharing (clj->js content))))
+
+(defn- go-live [] 
+	(re-frame/dispatch [:navigate-to :go-live]))
 
 (defn- message-options [message-id text]
   [{:label  (i18n/label :t/message-reply)

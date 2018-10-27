@@ -53,6 +53,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - NodeMediaClient (2.4.5)
   - Protobuf (3.6.1)
   - React (0.56.0):
     - React/Core (= 0.56.0)
@@ -68,6 +69,8 @@ PODS:
     - React
   - react-native-nfc-manager (0.5.5):
     - React
+  - react-native-randombytes (3.5.0):
+    - React
   - React/Core (0.56.0):
     - yoga (= 0.56.0.React)
   - RNKeychain (3.0.0):
@@ -77,10 +80,12 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
+  - NodeMediaClient
   - React (from `../node_modules/react-native`)
   - react-native-background-timer (from `../node_modules/react-native-background-timer`)
   - react-native-camera (from `../node_modules/react-native-camera`)
   - react-native-nfc-manager (from `../node_modules/react-native-nfc-manager`)
+  - react-native-randombytes (from `../node_modules/react-native-randombytes`)
   - RNKeychain (from `../node_modules/react-native-keychain`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -94,6 +99,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
+    - NodeMediaClient
     - Protobuf
 
 EXTERNAL SOURCES:
@@ -105,6 +111,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-camera"
   react-native-nfc-manager:
     :path: "../node_modules/react-native-nfc-manager"
+  react-native-randombytes:
+    :path: "../node_modules/react-native-randombytes"
   RNKeychain:
     :path: "../node_modules/react-native-keychain"
   yoga:
@@ -119,14 +127,16 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: f7507b39b70ad0bd80b3d81518b2f43868974307
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NodeMediaClient: 5df8bf2b22701b99c397a49c907f18cf92ecf9fd
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
   react-native-background-timer: bb7a98c8e97fc7c290de2d423dd09ddb73dcbcbb
   react-native-camera: 68ad5143d2d0636236d46c7de8d2a6455ca52a36
   react-native-nfc-manager: a74ef58b29f0015ae9e70f120645b796668ba5c2
+  react-native-randombytes: d3184d351604f78e019535178766590188bbc133
   RNKeychain: 627c6095cef215dd3d9804a9a9cf45ab96aa3997
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: b24b9e1dd90a715fd354083342dceb8f1a2f6d75
+PODFILE CHECKSUM: 3f3c28637aa8b7d7e4af6d9ae95472c2ab40be38
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

@@ -54,6 +54,13 @@
      :on-press            #(list-selection/open-share {:message (i18n/label :t/get-status-at)})}]
    [action-button/action-separator]
    [action-button/action-button
+    {:label               "Go live"
+     :accessibility-label :go-live-button
+     :icon                :icons/share
+     :icon-opts           {:color colors/blue}
+     :on-press            #(list-selection/go-live)}]
+   [action-button/action-separator]
+   [action-button/action-button
     {:label               (i18n/label :t/scan-qr)
      :accessibility-label :scan-qr-code-button
      :icon                :icons/qr

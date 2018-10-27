@@ -26,4 +26,5 @@
 (def snoopy-buffer          (js/require "rn-snoopy/stream/buffer"))
 (def background-timer       (.-default (js/require "react-native-background-timer")))
 (def react-navigation       (js/require "react-navigation"))
+(def media-client           (js/require "react-native-nodemediaclient"))
 (def desktop-linking        #js {:addEventListener (fn [])})

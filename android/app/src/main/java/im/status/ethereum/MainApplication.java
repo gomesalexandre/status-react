@@ -4,6 +4,27 @@ import android.support.multidex.MultiDexApplication;
 import com.aakashns.reactnativedialogs.ReactNativeDialogsPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactApplication;
+import io.realm.react.RealmReactPackage;
+import com.github.alinz.reactnativewebviewbridge.WebViewBridgePackage;
+import com.tradle.react.UdpSocketsModule;
+import com.peel.react.TcpSocketsModule;
+import com.horcrux.svg.SvgPackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
+import net.rhogan.rnsecurerandom.RNSecureRandomPackage;
+import com.bitgo.randombytes.RandomBytesPackage;
+import com.peel.react.rnos.RNOSModule;
+import cn.nodemedia.react_native_nodemediaclient.NodeMediaReactPackage;
+import com.oblador.keychain.KeychainPackage;
+import fr.bamlab.rnimageresizer.ImageResizerPackage;
+import com.reactnative.ivpusic.imagepicker.PickerPackage;
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
+import me.alwx.HttpServer.HttpServerReactPackage;
+import com.rnfs.RNFSPackage;
+import io.invertase.firebase.RNFirebasePackage;
+import com.aakashns.reactnativedialogs.ReactNativeDialogsPackage;
+import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
+import org.reactnative.camera.RNCameraPackage;
+import com.ocetnik.timer.BackgroundTimerPackage;
 import community.revteltech.nfc.NfcManagerPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
@@ -56,6 +77,27 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
             Function<String, String> callRPC = statusPackage.getCallRPC();
             List<ReactPackage> packages = new ArrayList<ReactPackage>(Arrays.asList(
                     new MainReactPackage(),
+            new RealmReactPackage(),
+            new WebViewBridgePackage(),
+            new UdpSocketsModule(),
+            new TcpSocketsModule(),
+            new SvgPackage(),
+            new SplashScreenReactPackage(),
+            new RNSecureRandomPackage(),
+            new RandomBytesPackage(),
+            new RNOSModule(),
+            new NodeMediaReactPackage(),
+            new KeychainPackage(),
+            new ImageResizerPackage(),
+            new PickerPackage(),
+            new RNI18nPackage(),
+            new HttpServerReactPackage(),
+            new RNFSPackage(),
+            new RNFirebasePackage(),
+            new ReactNativeDialogsPackage(),
+            new ReactNativeConfigPackage(),
+            new RNCameraPackage(),
+            new BackgroundTimerPackage(),
                     new NfcManagerPackage(),
                     new RNFirebasePackage(),
                     new RNFirebaseMessagingPackage(),
